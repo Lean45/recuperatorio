@@ -14,6 +14,7 @@ public class Donante extends Persona {
     }
 
     public void mostrarDonaciones(){
+        System.out.println("El donador Sr." + Donante.super.getNombre() + ". Donó:");
         for(Donacion a : donaciones){
             System.out.println(a);
         }

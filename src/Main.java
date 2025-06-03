@@ -42,9 +42,13 @@ public class Main {
         cap.agregarVoluntarios(Lean);
         cap.agregarVoluntarios(Licha);
 
+        cap.mostrarAsistentes();
+
         //DONACIONES
         Donacion palas = new Donacion(TipoDonacion.HERRAMIENTAS, "Donacion de palas", LocalDate.now());
         Donante LeanDona = new Donante("Lean", "45138112", "Lean@gmail.com", domicilio);
+
+        LeanDona.Donar(palas);
 
         LeanDona.mostrarDonaciones();
     }

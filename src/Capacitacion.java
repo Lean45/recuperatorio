@@ -19,8 +19,11 @@ public class Capacitacion {
     }
 
     public void mostrarAsistentes(){
+        int contador = 1;
         for (Voluntario v : voluntarios){
+            System.out.println("Asistente nro: " + contador);
             System.out.println(v);
+            contador ++;
         }
     }
 
